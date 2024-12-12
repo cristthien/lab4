@@ -1,0 +1,78 @@
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px; /* Giảm padding */
+  background-color: transparent;
+  box-shadow: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.top-navbar h3 {
+  font-size: 1rem; /* Kích thước font nhỏ hơn */
+  font-weight: bold;
+  color: rgb(242, 242, 242);
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.top-navbar .icon {
+  font-size: 1rem; /* Giảm kích thước icon */
+  color: rgb(255, 251, 251);
+  cursor: pointer;
+}
+
+.top-navbar .search-input {
+  border: 1px solid #fff;
+  border-radius: 20px; /* Bo tròn góc */
+  padding: 8px 5px;
+  font-size: 0.9rem;
+  background-color: transparent; /* Trong suốt */
+  width: 120px; /* Chiều rộng khung tìm kiếm ngắn lại */
+  transition: width 0.3s ease-in-out;
+}
+
+.top-navbar .search-input:focus {
+  outline: none;
+  border-color: #808182;
+}
+
+.top-navbar .search-icon {
+  font-size: 1.4rem;
+  color: rgb(255, 252, 252);
+  cursor: pointer;
+}
+
+/* Điều chỉnh khoảng cách giữa các icon */
+.top-navbar .icon,
+.top-navbar .search-icon {
+  margin: 0 5px; /* Khoảng cách nhỏ giữa các icon */
+}
+
+/* Media Query cho điện thoại nhỏ */
+@media (max-width: 480px) {
+  .top-navbar {
+    padding: 6px 10px; /* Điều chỉnh padding cho vừa với màn hình nhỏ */
+  }
+
+  .top-navbar h3 {
+    font-size: 0.9rem; /* Giảm kích thước font tiêu đề */
+  }
+
+  .top-navbar .icon {
+    font-size: 1.3rem; /* Giảm kích thước icon */
+  }
+
+  .top-navbar .search-input {
+    width: 100px; /* Chiều rộng khung tìm kiếm cho màn hình nhỏ */
+  }
+
+  .top-navbar .search-icon {
+    font-size: 1.3rem; /* Giảm kích thước icon tìm kiếm */
+  }
+}
